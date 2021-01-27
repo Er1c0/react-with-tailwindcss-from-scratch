@@ -1,0 +1,33 @@
+{
+  "name": "react-with-tailwindcss-from-scratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Er1c0/react-with-tailwindcss-from-scratch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Er1c0/react-with-tailwindcss-from-scratch/issues"
+  },
+  "homepage": "https://github.com/Er1c0/react-with-tailwindcss-from-scratch#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "css-loader": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+  }
+}
