@@ -1,0 +1,21 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* @tailwind base;
+
+@tailwind components;
+
+@tailwind utilities; */
+
+/* body {
+  text-align: center;
+  color: red;
+} */
+
+.content {
+  color: blueviolet;
+}
+

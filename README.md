@@ -280,7 +280,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 plugins: [
    ...,
    new HtmlWebpackPlugin({
-     template: './index.html',
+     template: 'dist/index.html',
   }),
 ]
 ...
@@ -331,14 +331,21 @@ module: {
             use: [
                 MiniCssExtractPlugin.loader,
                 'css-loader',
-                'postcss-loader',
+                // 'postcss-loader',
+                 {
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss",
+              plugins: [require("tailwindcss")],
+            },
+          },
             ]
         }
     ]
 }
 ...
 ```
-
+加`postcss-loader`会报错`PostCSS plugin postcss-purgecss requires PostCSS 8`，先不加
 再次打包，就会发现 `main.css` 小了很多。至此 `tailwindcss` 打包完成。
 
 ## 五、引入 React

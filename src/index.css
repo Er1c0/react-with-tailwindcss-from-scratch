@@ -3,12 +3,17 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+/* @tailwind base;
 
- /* body {
+@tailwind components;
+
+@tailwind utilities; */
+
+/* body {
   text-align: center;
   color: red;
 } */
 
 .content {
   color: blueviolet;
-} 
+}
