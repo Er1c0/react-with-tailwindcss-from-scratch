@@ -1,17 +1,23 @@
+import { hot } from "react-hot-loader";
+
 import React, { Component } from "react";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
-          <div class="flex-shrink-0">
-            <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo" />
+        <div className="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
+          <div className="flex-shrink-0">
+            {/* <img
+              className="h-12 w-12"
+              src="/img/logo.svg"
+              alt="ChitChat Logo"
+            /> */}
           </div>
-          <div class="ml-6 pt-1">
-            <h4 class="text-xl text-gray-900 leading-tight">ChitChat</h4>
-            <p class="text-base text-gray-600 leading-normal">
-              You have a new message!
+          <div className="ml-6 pt-1">
+            <h4 className="text-xl text-gray-900 leading-tight">NIHAO HMR</h4>
+            <p className="text-base text-gray-600 leading-normal">
+              You have a new message2!
             </p>
           </div>
         </div>
@@ -20,4 +26,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default hot(module)(App);

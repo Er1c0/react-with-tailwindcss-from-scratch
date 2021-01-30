@@ -383,7 +383,7 @@ modules: {
     },
   ],
 },
-resolve: [extensions: ["*", ".js", ".jsx"]],
+  resolve: { extensions: ["*", ".js", ".jsx"] },
 ...
 ```
 
@@ -433,7 +433,7 @@ class App extends Component{
 export default App;
 ```
 
-`yarn build` 后打开页面，能够正常看到 `app.jsx` 内容说明` react` 已经生效。
+`npm run  build` 后打开页面，能够正常看到 `app.jsx` 内容说明` react` 已经生效。
 
 ## 六、模块热替换 HMR
 
@@ -475,7 +475,7 @@ devServer: {
 ...
 ```
 
-这个时候如果你运行 `yarn dev` ，打开页面并进行一些修改，你会发现并没有自动刷新。 因为现在只是 webpack 做好了热更新准备，我们还需要告诉 webpack 我们更新了哪些内容。所以还需要安装一个 `react-hot-loader ` 组件
+这个时候如果你运行 `npm run dev` ，打开页面并进行一些修改，你会发现并没有自动刷新。 因为现在只是 webpack 做好了热更新准备，我们还需要告诉 webpack 我们更新了哪些内容。所以还需要安装一个 `react-hot-loader ` 组件
 
 ```shell
 npm i react-hot-loader -D
