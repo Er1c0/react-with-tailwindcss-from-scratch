@@ -1,4 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/app";
+
 import "./index.css";
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("content").innerText = "Content from JS";
-});
+
+ReactDOM.render(<App />, document.getElementById("content"));

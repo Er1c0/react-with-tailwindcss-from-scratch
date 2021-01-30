@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/Er1c0/react-with-tailwindcss-from-scratch#readme",
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "@fullhuman/postcss-purgecss": "^4.0.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
+    "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
     "html-webpack-plugin": "^5.0.0-beta.6",
     "mini-css-extract-plugin": "^1.3.4",
